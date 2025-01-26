@@ -28,17 +28,19 @@ The App demonstrates key React concepts:
     - Delete a bot forever (dischargeBot function).
 
 ### Features
-1. **Browse Products**: 
-   - View a list of available products, including their names, prices, and an "Add to Cart" button.
+1. **View All Bots**: 
+   - The ```BotCollection``` component renders a list of all bots fetched from the server. Each bot is displayed as a ```BotCard``` with relevant details like its name, catchphrase, class, health, damage, and armor.
    
-2. **Add to Cart**: 
-   - Add products to the cart. If the product is already in the cart, its quantity will increase.
+2. **Add a Bot to the Army**: 
+   - By clicking the "Add to Army" button on a bot in the ```BotCollection```, the bot is added to the ```YourBotArmy``` component. The same bot cannot be added to the army multiple times (duplicate prevention).
    
-3. **View Cart**: 
-   - Users can view all items in the cart, showing each item's name, price, quantity, and total price.
+3. **Remove a Bot from the Army**: 
+   - By clicking the "Remove from Army" button on a bot displayed in the ```YourBotArmy```, the bot is removed from the user's army. It remains in the ```BotCollection```.
    
-4. **Manage Cart**: 
-   - Remove products from the cart or adjust their quantities.
+4. **Delete a Bot Forever**: 
+   - Clicking the red "x" button on a bot (available in both ```BotCollection``` and ```YourBotArmy```) will:
+        - Delete the bot from the backend server (DELETE /bots/:id).
+        - Remove the bot from both the ```BotCollection``` and ```YourBotArmy``` on the frontend.
 
 ### Demo
 [View Live Demo](#) (https://botbattlr-by-amanda.netlify.app/)
