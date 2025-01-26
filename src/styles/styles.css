@@ -1,0 +1,25 @@
+.bot-card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .bot-card img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .bot-card p {
+    margin: 5px 0;
+    word-wrap: break-word; /* Ensures long text breaks onto the next line */
+    max-width: 200px; /* Limits the width of long strings */
+    margin: 0 auto;
+  }
+  

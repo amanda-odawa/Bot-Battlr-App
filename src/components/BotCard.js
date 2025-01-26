@@ -1,29 +1,25 @@
 import React from "react";
 
-function BotCard({ bot, handleClick, dischargeBot }) {
+function BotCard({ bot, onAddToArmy, onDischarge }) {
   return (
-    <div style={{ border: "1px solid black", padding: "10px", margin: "10px", width: "200px" }}>
-      <img src={bot.avatar_url} alt={bot.name} style={{ width: "100%" }} />
+    <div className="bot-card">
+      <img src={bot.avatar_url} alt={bot.name} className="bot-image" />
       <h3>{bot.name}</h3>
-      <p>{bot.catchphrase}</p>
       <p>
         <strong>Class:</strong> {bot.bot_class}
       </p>
       <p>
-        <strong>Health:</strong> {bot.health}
+        <strong>Catchphrase:</strong> <em>"{bot.catchphrase}"</em>
       </p>
       <p>
-        <strong>Damage:</strong> {bot.damage}
+        <strong>Health:</strong> {bot.health} | <strong>Damage:</strong>{" "}
+        {bot.damage} | <strong>Armor:</strong> {bot.armor}
       </p>
-      <p>
-        <strong>Armor:</strong> {bot.armor}
-      </p>
-      <button onClick={() => handleClick(bot)}>Select</button>
-      <button onClick={() => dischargeBot(bot)} style={{ color: "red" }}>
-        x
-      </button>
+      <button onClick={() => onAddToArmy(bot)}>Add to Army</button>
+      <button onClick={() => onDischarge(bot)}>Discharge</button>
     </div>
   );
 }
 
 export default BotCard;
+

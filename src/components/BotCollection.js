@@ -1,17 +1,20 @@
 import React from "react";
-import BotCard from "./Components/BotCard";
+import BotCard from "./BotCard";
 
-function BotCollection({ bots, addToArmy, dischargeBot }) {
+function BotCollection({ bots, onAddToArmy, onDischarge }) {
   return (
-    <div>
-      <h2>All Bots</h2>
-      <div style={{ display: "flex", flexWrap: "wrap" }}>
-        {bots.map((bot) => (
-          <BotCard key={bot.id} bot={bot} handleClick={addToArmy} dischargeBot={dischargeBot} />
-        ))}
-      </div>
+    <div className="bot-collection">
+      {bots.map((bot) => (
+        <BotCard
+          key={bot.id}
+          bot={bot}
+          onAddToArmy={onAddToArmy}
+          onDischarge={onDischarge}
+        />
+      ))}
     </div>
   );
 }
 
 export default BotCollection;
+
