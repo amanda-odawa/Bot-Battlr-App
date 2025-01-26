@@ -56,7 +56,7 @@ Before running the app, make sure you have the following installed:
     ```
 2. Navigate into the project directory:
     ```bash
-    cd phase2-wk2-code-challenge.git
+    cd phase2-wk2-code-challenge
     ```
 3. Install the necessary dependencies:
     ```bash
@@ -66,8 +66,14 @@ Before running the app, make sure you have the following installed:
     ```bash
     json-server --watch db.json
     ```
-5. Te
-
+5. Test your server by visiting this route in the browser:
+    ```bash
+    http://localhost:8001/bots
+    ```
+6. Run the app:
+    ```bash
+    npm start
+    ```
 
 ### Usage
 Once the app is running, navigate to it in your browser. You can:
