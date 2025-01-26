@@ -1,4 +1,5 @@
 # Bot Battlr App
+
 Bot Battlr is a simple, fun, and interactive React App where users can browse different bots, add them to their army, remove them from their army, or completely delete them from the site. 
 
 The App demonstrates key React concepts:
