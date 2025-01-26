@@ -70,17 +70,18 @@ Before running the app, make sure you have the following installed:
     ```bash
     http://localhost:8001/bots
     ```
-6. Run the app:
+6. Run the app (Navigate to it on your browser):
     ```bash
     npm start
     ```
 
 ### Usage
-Once the app is running, navigate to it in your browser. You can:
-- **Browse Products**: See a list of products with names and prices.
-- **Add Products to Cart**: Click the "Add to Cart" button to add a product to your cart. If it’s already in the cart, its quantity will increase.
-- **View Cart**: Check the cart to see added items, their prices, and the total cost.
-- **Manage Cart**: Adjust quantities or remove items from the cart.
+Once the app is running, you can:
+- **Browse Bots**: See a list of Battle Bots with their name, catchphrase, class, health, damage, and armor..
+- **Add a Bot to your Army**: Click the "Add to Army" button to add a Bot to your army. If it’s already in the army, clicking "Add to Army" has no effect.
+- **View Bot Army**: Bots added to your army appear in a special container at the top of the page.
+- **Manage Army**: You can remove a Bot from your army by clicking "Remove from Army" button.
+- **Delete a Bot**: Click the "x" button to delete a bot from the backend server and the frontend UI.
 
 ### Contributing
 We welcome contributions! To contribute, please follow these steps:
