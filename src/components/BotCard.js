@@ -1,4 +1,5 @@
 import React from "react";
+import "../styles/BotCard.css";
 
 function BotCard({ bot, onAddToArmy, onDischarge, onRemoveFromArmy }) {
   return (

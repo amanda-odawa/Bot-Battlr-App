@@ -1,5 +1,6 @@
 import React from "react";
 import BotCard from "./BotCard";
+import "../styles/BotCollection.css";
 
 function BotCollection({ bots, onAddToArmy, onDischarge }) {
   return (

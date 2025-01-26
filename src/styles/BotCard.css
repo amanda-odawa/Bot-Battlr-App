@@ -1,0 +1,46 @@
+.bot-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin: 10px;
+    text-align: center;
+    background-color: #fff;
+    transition: transform 0.2s;
+  }
+  
+  .bot-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  .bot-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .bot-card button {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.2s;
+  }
+  
+  .bot-card button:hover {
+    background-color: #45a049;
+  }
+  
+  .discharge-button {
+    background-color: #ff4d4d;
+  }
+  
+  .discharge-button:hover {
+    background-color: #e43e3e;
+  }
