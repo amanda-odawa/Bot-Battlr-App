@@ -88,7 +88,7 @@ We welcome contributions! To contribute, please follow these steps:
 1. Fork the repository.
 2. Clone your fork locally:
     ```bash
-    git clone https://github.com/yourusername/phase2-wk1-code-challenge.git
+    git clone https://github.com/yourusername/phase2-wk2-code-challenge.git
     ```
 3. Create a new branch for your feature:
     ```bash
