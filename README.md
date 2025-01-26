@@ -1,6 +1,13 @@
 # Bot Battlr App
 Bot Battlr is a simple, fun, and interactive React App where users can browse different bots, add them to their army, remove them from their army, or completely delete them from the site. 
 
+The App demonstrates key React concepts:
+1. Components: Dividing the app into reusable and manageable parts.
+2. Props: Passing data between components.
+3. State Management: Managing application data dynamically.
+4. Data Fetching: Retrieving and managing data from a backend server.
+5. Events: Adding interactive functionality to the UI.
+
 ## Table of Contents:
 - [Technologies and Tools](#technologies-and-tools)
 - [Features](#features)
@@ -16,9 +23,9 @@ Bot Battlr is a simple, fun, and interactive React App where users can browse di
 - **React**: JavaScript library for building user interfaces.
 - **CSS**: Styling for the app.
 - **Event Listeners**: Click Events:
-    Add a bot to the army (addToArmy function).
-    Remove a bot from the army (removeFromArmy function).
-    Delete a bot forever (dischargeBot function).
+    - Add a bot to the army (addToArmy function).
+    - Remove a bot from the army (removeFromArmy function).
+    - Delete a bot forever (dischargeBot function).
 
 ### Features
 1. **Browse Products**: 
@@ -38,7 +45,6 @@ Bot Battlr is a simple, fun, and interactive React App where users can browse di
 
 ### Prerequisites
 Before running the app, make sure you have the following installed:
-
 - Node.js (>= 14.0)
 - npm (>= 6.0)
 
