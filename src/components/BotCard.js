@@ -10,7 +10,7 @@ function BotCard({ bot, onAddToArmy, onDischarge, onRemoveFromArmy }) {
         <strong>Class:</strong> {bot.bot_class}
       </p>
       <p>
-        <strong>Catchphrase:</strong> <em>"{bot.catchphrase}"</em>
+        <strong>Catchphrase:</strong> <em className="catchphrase">"{bot.catchphrase}"</em>
       </p>
       <p>
         <strong>Health:</strong> {bot.health} | <strong>Damage:</strong> {bot.damage} | <strong>Armor:</strong> {bot.armor}
@@ -19,7 +19,7 @@ function BotCard({ bot, onAddToArmy, onDischarge, onRemoveFromArmy }) {
         <button onClick={() => onAddToArmy(bot)}>Add to Army</button>
       )}
       {onRemoveFromArmy && (
-        <button onClick={() => onRemoveFromArmy(bot)}>Remove from Army</button>
+        <button onClick={() => onRemoveFromArmy(bot)}>Remove</button>
       )}
       <button onClick={() => onDischarge(bot)} className="discharge-button">
         Discharge

@@ -9,7 +9,7 @@ function YourBotArmy({ botArmy, onRemoveFromArmy, onDischarge }) {
         <BotCard
           key={bot.id}
           bot={bot}
-          onAddToArmy={null} // Not needed in YourBotArmy
+          onAddToArmy={null} 
           onDischarge={onDischarge}
           onRemoveFromArmy={onRemoveFromArmy}
         />

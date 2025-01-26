@@ -39,7 +39,7 @@ function App() {
 
   return (
     <div>
-      <h1>Bot Battlr</h1>
+      <h1 style={{textAlign: "center", marginTop: "20px"}}>Bot Battlr</h1>
       <YourBotArmy botArmy={botArmy} onRemoveFromArmy={removeFromArmy} onDischarge={dischargeBot} />
       <BotCollection bots={bots} onAddToArmy={addToArmy} onDischarge={dischargeBot} />
     </div>

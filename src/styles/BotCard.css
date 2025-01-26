@@ -7,6 +7,7 @@
     text-align: center;
     background-color: #fff;
     transition: transform 0.2s;
+    max-width: 230px;
   }
   
   .bot-card:hover {
@@ -15,14 +16,15 @@
   }
   
   .bot-card img {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
+    border: 2px solid #4caf50;
     margin-bottom: 10px;
   }
   
   .bot-card button {
-    background-color: #4caf50;
+    background-color: #45a049;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -34,13 +36,22 @@
   }
   
   .bot-card button:hover {
-    background-color: #45a049;
+    background-color: #4caf50;
   }
   
-  .discharge-button {
+  .bot-card .discharge-button {
+    background-color: #e43e3e;
+  }
+  
+  .bot-card .discharge-button:hover {
     background-color: #ff4d4d;
   }
-  
-  .discharge-button:hover {
-    background-color: #e43e3e;
+
+  .catchphrase {
+    word-wrap: break-word; 
+    overflow-wrap: break-word; 
+    white-space: normal; 
+    text-align: center; 
+    font-size: 14px; 
+    margin-top: 10px; 
   }
