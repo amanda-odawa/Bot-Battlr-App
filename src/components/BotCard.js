@@ -19,10 +19,10 @@ function BotCard({ bot, onAddToArmy, onDischarge, onRemoveFromArmy }) {
         <button onClick={() => onAddToArmy(bot)}>Add to Army</button>
       )}
       {onRemoveFromArmy && (
-        <button onClick={() => onRemoveFromArmy(bot)}>Remove</button>
+        <button onClick={() => onRemoveFromArmy(bot)}>Remove from Army</button>
       )}
       <button onClick={() => onDischarge(bot)} className="discharge-button">
-        Discharge
+        X
       </button>
     </div>
   );

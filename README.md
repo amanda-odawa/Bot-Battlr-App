@@ -47,17 +47,17 @@ The App demonstrates key React concepts:
 
 ### Prerequisites
 Before running the app, make sure you have the following installed:
-- Node.js (>= 14.0)
-- npm (>= 6.0)
+    - Node.js (>= 14.0)
+    - npm (>= 6.0)
 
 ### Installation
 1. Clone the repository to your local machine:
     ```bash
-    git clone https://github.com/yourusername/phase2-wk1-code-challenge.git
+    git clone https://github.com/yourusername/phase2-wk2-code-challenge.git
     ```
 2. Navigate into the project directory:
     ```bash
-    cd react-shopping-cart
+    cd phase2-wk2-code-challenge.git
     ```
 3. Install the necessary dependencies:
     ```bash
