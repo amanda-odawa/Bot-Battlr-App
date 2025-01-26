@@ -41,7 +41,7 @@ The App demonstrates key React concepts:
    - Remove products from the cart or adjust their quantities.
 
 ### Demo
-[View Live Demo](#) *(Demo link to be added once hosted)*
+[View Live Demo](#) (https://botbattlr-by-amanda.netlify.app/)
 
 ### Prerequisites
 Before running the app, make sure you have the following installed:
