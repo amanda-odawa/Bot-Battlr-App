@@ -1,15 +1,18 @@
 import React from "react";
 import BotCard from "./BotCard";
 
-function YourBotArmy({ army, removeFromArmy, dischargeBot }) {
+function YourBotArmy({ botArmy, onRemoveFromArmy, onDischarge }) {
   return (
-    <div>
-      <h2>Your Bot Army</h2>
-      <div style={{ display: "flex", flexWrap: "wrap" }}>
-        {army.map((bot) => (
-          <BotCard key={bot.id} bot={bot} handleClick={removeFromArmy} dischargeBot={dischargeBot} />
-        ))}
-      </div>
+    <div className="bot-army">
+      {botArmy.map((bot) => (
+        <BotCard
+          key={bot.id}
+          bot={bot}
+          onAddToArmy={null} // Not needed in YourBotArmy
+          onDischarge={onDischarge}
+          onRemoveFromArmy={onRemoveFromArmy}
+        />
+      ))}
     </div>
   );
 }

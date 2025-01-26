@@ -1,6 +1,6 @@
 import React from "react";
 
-function BotCard({ bot, onAddToArmy, onDischarge }) {
+function BotCard({ bot, onAddToArmy, onDischarge, onRemoveFromArmy }) {
   return (
     <div className="bot-card">
       <img src={bot.avatar_url} alt={bot.name} className="bot-image" />
@@ -12,14 +12,19 @@ function BotCard({ bot, onAddToArmy, onDischarge }) {
         <strong>Catchphrase:</strong> <em>"{bot.catchphrase}"</em>
       </p>
       <p>
-        <strong>Health:</strong> {bot.health} | <strong>Damage:</strong>{" "}
-        {bot.damage} | <strong>Armor:</strong> {bot.armor}
+        <strong>Health:</strong> {bot.health} | <strong>Damage:</strong> {bot.damage} | <strong>Armor:</strong> {bot.armor}
       </p>
-      <button onClick={() => onAddToArmy(bot)}>Add to Army</button>
-      <button onClick={() => onDischarge(bot)}>Discharge</button>
+      {onAddToArmy && (
+        <button onClick={() => onAddToArmy(bot)}>Add to Army</button>
+      )}
+      {onRemoveFromArmy && (
+        <button onClick={() => onRemoveFromArmy(bot)}>Remove from Army</button>
+      )}
+      <button onClick={() => onDischarge(bot)} className="discharge-button">
+        Discharge
+      </button>
     </div>
   );
 }
 
 export default BotCard;
-
